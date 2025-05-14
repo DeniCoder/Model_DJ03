@@ -1,0 +1,124 @@
+{% extends 'main/base.html' %}
+
+{% load static %}
+
+{% block title %}
+  База отдыха "Человек Солнца"
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+  <div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
+    <div class="col">
+      <div class="card h-100">
+        <img src="{% static 'main/img/dom1.webp' %}" class="card-img-top" alt="Дом снаружи">
+        <div class="card-body">
+          <h5 class="card-title">Цветущий двор</h5>
+          <p class="card-text">Территория вся утопает в зелени: инжир, гранат,
+            грецкий орех, виноград, черешня, пальмы. Двор хоть и небольшой, но очень
+            уютный.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="{% static 'main/img/dom2.webp' %}" class="card-img-top" alt="Дом изнутри">
+        <div class="card-body">
+          <h5 class="card-title">Скромный и уютный номер</h5>
+          <p class="card-text">В номере кондиционер и холодильник. Кухня общая,
+            расположена отдельно. Три номера с индивидуальными санузлом, душем с горячей водой,
+            телевизором. Три номера с общим санузлом, душем с горячей водой,
+            телевизором.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="{% static 'main/img/mangal.webp' %}" class="card-img-top" alt="Мангал">
+        <div class="card-body">
+          <h5 class="card-title">Мангальная зона</h5>
+          <p class="card-text">Шашлыки можно пожарить на мангале и сразу съесть,
+            разместившись тут же в комфортной и прохладной беседке.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mt-4">
+    <div class="col">
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+              Уютные и вместительные комнаты
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+              <strong>Предлагаются разные типы размещения:</strong>
+              <br>
+              - комната вместимостью от 4 до 5 человек - 1 номер;
+              <strong>телевизор и санузел общий на 3 номера;</strong>
+              <br>
+              - комната вместимостью от 3 до 4 человек - 3 номера;
+              <strong>в 1 номере телевизор и санузел общий на 3 номера;</strong>
+              <strong>в 2-х номерах телевизор и санузел свой, индивидуальный;</strong>
+              <br>
+              - комната вместимостью от 2 до 3 человек - 1 номер;
+              <strong>телевизор и санузел свой, индивидуальный;</strong>
+              <br>
+              - комната вместимостью от 1 до 2 человек - 1 номер.
+              <strong>телевизор и санузел общий на 3 номера;</strong>
+              <hr>
+              <br>
+              <br>
+              <strong>Каждый номер оснащён кондиционером и холодильником.</strong>
+              <br>
+
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true" aria-controls="panelsStayOpen-collapseTwo">
+              Удобства базы отдыха
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+              <strong>Парковка:</strong> Авто можно припарковать за дополнительную плату
+              на территории базы отдыха (доступно 2 парковочных места).
+              <br>
+              <strong>Питание:</strong> Вы можете самостоятельно готовить еду
+              на общей кухне (вся утварь предоставляется бесплатно),
+              либо питаться в многочисленных кафе и столовых на побережье.
+              <br>
+              <strong>Возможность доставки:</strong> Для удобства гостей предусмотрена
+              услуга трансфера комфортабельным автомобилем из Краснодара за отдельную плату.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="true" aria-controls="panelsStayOpen-collapseThree">
+              Бронирование
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+              <strong>Приезжайте когда угодно:</strong> Базу отдыха можно забронировать
+              как на выходные, так и на длительный период. Продолжительность вашего
+              пребывания зависит только от Вашего желания.
+              <br>
+              <strong>Забронируйте заранее:</strong> Чтобы насладиться всеми
+              преимуществами летнего отдыха, рекомендуем бронировать проживание
+              заблаговременно.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
