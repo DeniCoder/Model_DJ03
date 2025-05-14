@@ -1,0 +1,10 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+  Новости
+{% endblock %}
+
+{% block content %}
+  <h1>Новостная страница</h1>
+  {{}}
+{% endblock %}
