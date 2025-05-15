@@ -1,0 +1,17 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+  Подробнее о новости
+{% endblock %}
+
+{% block content %}
+  <div class="card mb-3">
+    <div class="card-body">
+      <h1 class="card-title">{{ post.title }}</h1>
+      <p class="card-text">{{ post.text }}</p>
+      <p class="card-text"><small class="text-muted">Дата публикации: {{ post.pub_date }}</small>
+      <p class="card-text"><small class="text-muted">Автор: {{ post.author }}</small></p>
+      <a href="{% url 'news' %}" class="btn btn-secondary">Назад</a>
+    </div>
+  </div>
+{% endblock %}
